@@ -1,3 +1,8 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 img[src="images/brank.png"] {
     max-height: 100px;
     width: auto;
@@ -6,11 +11,17 @@ img[src="images/balaclava-blk.png"] {
     max-height: 100px;
     width: auto;
 }
-img [src="images/bondy.png"] {
+img[src="images/bondy.png"] {
     max-height: 100px;
     width: auto;
 }
-img [src="images/church.png"] {
+img[src="images/church.png"] {
     max-height: 100px;
     width: auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
 }
