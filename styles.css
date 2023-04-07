@@ -1,16 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    background-color: #1f2937;
+    padding: 64px;
+    padding-top: 0;
+}
+.header,
+.hero {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+}
+.header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.header > p {
+    padding: 16px;
+    font-size: 18px;
+    color: #F9FAF8;
+}
+.header-links{
+    display: flex;
+    padding: 16px;
+    margin: 0;
+    gap: 16px;
+    font-size: 18px;
+    color: #e5e7eb
+}
+.hero {
+    justify-content: space-between;
+}
+.hero .hero-left{
+    flex: .9 1 0;
+}
+.hero-left button {
+    flex: 0 1 0;
+}
+.hero-left {
+    display: flex;
+    flex-direction: column;
+}
+.hero-left > .text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin-bottom: 0;
+}
+.hero-left > .subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+img[src="images/what.png"]{
+    height: auto;
+    width: 300px;
+    flex-shrink: 0;
+}
+
 img[src="images/brank.png"] {
-    max-height: 100px;
-    width: auto;
+    height: auto;
+    width: 100px;
 }
 img[src="images/balaclava-blk.png"] {
-    max-height: 100px;
-    width: auto;
+    height: auto;
+    width: 100px;
 }
-img [src="images/bondy.png"] {
-    max-height: 100px;
-    width: auto;
+img[src="images/bondy.png"] {
+    height: auto;
+    width: 100px;
 }
-img [src="images/church.png"] {
-    max-height: 100px;
-    width: auto;
+img[src="images/church.png"] {
+    height: auto;
+    width: 100px;
+}
+.body-one {
+    display: flex;
+}
+.drawings {
+    display: flex;
+}
+button,
+.body-three {
+    color: white;
+    background-color: #3882f6
+}
+button {
+    text-decoration: none;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
 }
