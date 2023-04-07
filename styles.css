@@ -2,12 +2,15 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 ul {
     list-style-type: none;
 }
 a {
     text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb
 }
 p,
 ul {
@@ -15,9 +18,17 @@ ul {
     margin: 0;
 }
 
+.head,
+.body-one,
+.body-two,
+.body-three,
+.footer {
+    flex: 1;
+}
+
 .head {
     background-color: #1f2937;
-    padding: 64px;
+    padding: 32px 64px;
     padding-top: 0;
 }
 .header,
@@ -41,8 +52,6 @@ ul {
     padding: 16px;
     margin: 0;
     gap: 16px;
-    font-size: 18px;
-    color: #e5e7eb
 }
 .hero {
     justify-content: space-between;
@@ -56,6 +65,7 @@ ul {
 .hero-left {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 .hero-left > .text {
     font-size: 48px;
@@ -71,38 +81,74 @@ img[src="images/what.png"]{
     height: auto;
     width: 300px;
     flex-shrink: 0;
+    border: none;
 }
 
-img[src="images/brank.png"] {
-    height: auto;
+img {
     width: 100px;
-}
-img[src="images/balaclava-blk.png"] {
-    height: auto;
-    width: 100px;
-}
-img[src="images/bondy.png"] {
-    height: auto;
-    width: 100px;
-}
-img[src="images/church.png"] {
-    height: auto;
-    width: 100px;
+    height: 100px;
+    border: solid;
+    border-color: blue;
+    border-radius: 12px;
 }
 .body-one {
+    text-align: center;
+    padding: 32px;
+}
+.body-one > .text {
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 32px;
+}
+.body-one .container {
     display: flex;
+    justify-content: center;
+    gap: 22px;
 }
 .drawings {
-    display: flex;
+   max-width: 200px;
 }
-button,
+.body-two{
+    display: flex;
+    flex-direction: column;
+    padding: 52px;
+    background-color: #e5e7eb;
+}
+.body-two > .text {
+    font-size: 36px;
+    font-weight: 20;
+    text-align: center;
+    font-style: italic;
+}
+.quotecred {
+    margin-right: 128px;
+    display: flex;
+    justify-content: end;
+}
+
 .body-three {
-    color: white;
-    background-color: #3882f6
+    padding: 56px;
+}
+.body-three .container {
+    background-color: #3882f6;
+    padding: 32px;
+    margin: 0px 64px;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
 }
 button {
     text-decoration: none;
     border: none;
-    padding: 16px;
+    padding: 8px 24px;
     border-radius: 12px;
+    color: white;
+    background-color: #3882f6;
+}
+.body-three button {
+    border: solid;
+    border-color: white;
+}
+.footer {
+    background-color: #1f2937;
 }
