@@ -134,8 +134,16 @@ img {
     padding: 32px;
     margin: 0px 64px;
     border-radius: 12px;
+    display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.body-three .container .signup > .text {
+    padding-bottom: 4px;
+    font-size: 24px;
+}
+.body-three .container .signup {
+    color: white;
 }
 button {
     text-decoration: none;
@@ -151,4 +159,21 @@ button {
 }
 .footer {
     background-color: #1f2937;
+    color: white;
+    display: flex;
+    padding: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.fa-instagram {
+    padding: 10px;
+    font-size: 30px;
+   
+    text-align: center;
+    text-decoration: none;
+    background: #C13584;
+}
+.fa:hover {
+    opacity: .7;
 }
